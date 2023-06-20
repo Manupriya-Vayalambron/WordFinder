@@ -1,3 +1,4 @@
+/*This is the c programming code of the gaming section*/
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
