@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="links">
+        <h3><a href="index.html" style="text-decoration: none; color: white">WordFinder</a></h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    
+    
+   
+    <div class="main">
+       
+        <div class="rem_tries_div">
+            <h4>Tries Left: <span class="rem_tries">7</span></h4>
+        </div>
+        
+        <section class="new_game">
+            <label for="num" class="num_lab">Enter a number from 1 to 100</label><br>
+            <input type="text" id = "num" class="num"><br>
+            <input type="submit" value="SUBMIT" class="submit">
+        </section>
+        <section class = "play">
+            <div class="remarks_div">
+                <h4 class="remarks"></h4>
+            </div>
+            <div class="usedltr_div">
+                <h4 class="usedltr"></h4>
+            </div>
+            <div class="hint_div">
+                <h4 class="hint"> </h4>
+            </div>
+            <div class="blank_div">
+                <h4 class="blank"> </h4>
+            </div>
+            <div class="user_val">
+                <label for="letter" class="letter_lab">Guess a letter:</label>
+                <input type="text" id="letter" class="letter" placeholder="Enter a letter"></input>
+                <br></br>
+                <button class="enter" id="enter" onclick="lettershow();">ENTER</button>
+               
+            </div> 
+                      
+        </section>
+        
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

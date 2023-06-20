@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Prompt:wght@200;600&family=Righteous&family=Spectral+SC:wght@200;300;400;500;800&display=swap');
+body{/*adding background image*/
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    
+    width: 100%;
+    background-image: url('mainpage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: ; */
+}
+.links{/*Adding upper margin and just name of game*/
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+}
+.links h3{/*Displaying name of game in proper format*/
+    display: inline;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+}
+.links ul{/*Adjusting position of HOME and ABOUT*/
+    list-style: none;
+    display: inline;
+    position: relative;
+    left: 65%;
+}
+.links ul li{/*proper alignment of HOME and ABOUT*/
+    display: inline;
+    padding: 15px;
+    font-size: 16px;
+}
+.links ul li a{/*adding font to HOME and ABOUT*/
+    color: white;
+    text-decoration: none;
+}
+section{/* display "GUESS THE WORD DA" and centarize contents below margin*/
+    margin: 150px;
+    color: white;
+    text-align: center;
+}
+section h2{/*adjust size of "GUESS THE WORD DA"*/
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 6px;
+}
+section button{/*button design*/
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: white;
+    transition: 0.3s;
+}
+section button:hover{
+    opacity: 0.5;
+    color: black;
+    
+}
+
+section .game{/*text written on button design*/
+    cursor: pointer;
+    /* border: 3px solid white; */
+    color: black;
+    background-color: white;
+    background-color: transparent;
+    transition: 0.3s;
+    text-decoration: none;
+}
+section .game:hover{
+    background-color: white;
+    color: black;
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    padding: px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

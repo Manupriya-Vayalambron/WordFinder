@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="links">
+        <h3><a href="index.php" style="text-decoration: none; color: white">WordFinder</a></h3>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+        </ul>
+    </div>
+    
+    
+   
+    <div class="main">
+
+        <div class="rem_tries_div">
+            <h4>Tries Left: <span class="rem_tries">7</span></h4>
+        </div>
+        <div class="remarks_div">
+            <h4 class="remarks"></h4>
+        </div>
+        <div class="usedltr_div">
+            <h4 class="usedltr"></h4>
+        </div>
+       
+  <section class="new_game">
+            <label for="num" class="num_lab">Enter a number from 1 to 50</label>
+            <br>
+            <input id="num" onkeypress="handleKeyPress(event)" class="num">
+            <br><br>
+            <center>
+                <button class="submit" id="n" onclick="myFunction();">Submit</button>
+            </center>
+            <p id="demo"></p>
+        </section>
+       
+        <section class="play">
+            <div class="hint_div">
+                <h4 class="hint"></h4>
+            </div>
+            <div class="blank_div">
+                <h4 class="blank"></h4>
+            </div>
+            <div class="user_val">
+                <form id="myForm">
+                    <label for="letter" class="letter_lab">Guess a letter:</label>
+                    <input type="text" id="letter" class="letter" onkeypress="handleKeyPress(event)" placeholder="Enter a letter" />
+                    <br><br>
+                    <center>
+                        <input type="button" class="enter" id="myBtn" value="ENTER" onclick="lettershow();">
+                    </center>
+                    <p id="caps"> Turn on Caps Lock</p>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="easylevel.js"></script>
+	<script>
+        function myFunction() {
+            // Get the value of the input field with id="num"
+            let x = document.getElementById("num").value;
+            // If x is Not a Number or less than one or greater than 50
+            let text;
+            if (isNaN(x) || x < 1 || x > 50) {
+                text = "Input not valid";
+            } else {
+                text = "";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+
+        var input = document.getElementById("letter");
+        var text = document.getElementById("caps");
+        input.addEventListener("keyup", function(event) {
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "none";
+            } else {
+                text.style.display = "block";
+            }
+        });
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault(); // Prevent form submission
+               
+		    document.getElementById("myBtn").click();
+            }
+   var input = document.getElementById("num");
+   input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+         event.preventDefault();
+         document.getElementById("n").click();
+  }
+});        
+
+}
+		
+    </script>
+</body>
+</html>

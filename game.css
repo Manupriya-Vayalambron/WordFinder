@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Prompt:wght@200;600&family=Righteous&family=Spectral+SC:wght@200;300;400;500;800&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    overflow: hidden;
+    width: 100%;
+    /*background-image: url('mainpage.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url('camera2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* opacity: ; */
+}
+.links{/*top margin lengthening*/
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+}
+.links h3{
+    display: inline;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+}
+.links ul{
+    list-style: none;
+    display: inline;
+    position: relative;
+    left: 80%;
+}
+.links ul li{
+    display: inline;
+    padding: 15px;
+    font-size: 16px;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*all the above mentioned codes are for margin and exactly same as in index.css*/
+.new_game{/*increase the white space to 3/4th of screen, aligns "Enter a number" and removes half section(hint, guessing of alphabet etc)*/
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    margin: 150px;
+    font-size: 25px;
+    border-right: 1px solid black;
+}
+.new_game .num_lab{/*no much change*/
+    margin: 3px;
+
+}
+.new_game .num{/*beautifying the "enter a number" part. adding color to the textbox border etc*/
+    width: 75px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 20px;
+    text-align: center;
+}
+.new_game .submit{/*beautifying the submit button below "enter a number"*/
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    letter-spacing: 5px;
+    padding: 4px 4px;
+    margin-right: 0px;
+}
+.play{/*right side section of guessing becomes visible*/
+    width: 30%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.rem_tries_div{/*aligns "tries left" to the right side of screen*/
+    text-align: right;
+    margin-right: 50px;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+.hint_div{/*no much change*/
+
+    font-size: 20px;
+}
+.rem_tries{/*adds red color box and design to "tries left" area*/
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.letter{/*adjust size of "enter the letter" */
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+.enter{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    letter-spacing: 5px;
+    padding: 4px 4px;
+    margin-right: -65px;
+}
+
+.caps{
+    margin-right: -65px;
+}
+/*bottom codes: no idea what use, all looks good even without it*/
+.blank{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.remarks_div{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    /*width: 100%;
+    /*text-align: center;
+    color: red;
+    position: relative;
+    bottom: 90px;
+    margin: 0px;*/
+
+}
+.remarks_div .remarks{
+
+   /* font-size: 25px;*/
+}
+.usedltr_div{
+    font-size: 20px;
+    color: rgb(21, 119, 204);
+    text-align: center;
+}
+.usedltr{
+
+}
+.main{
+    height: 50%;
+    background-color: white;
+    opacity: 0.97;
+}
