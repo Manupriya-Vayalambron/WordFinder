@@ -42,16 +42,61 @@
                 <h4 class="blank"> </h4>
             </div>
             <div class="user_val">
-                <label for="letter" class="letter_lab">Guess a letter:</label>
-                <input type="text" id="letter" class="letter" placeholder="Enter a letter"></input>
-                <br></br>
-                <button class="enter" id="enter" onclick="lettershow();">ENTER</button>
-               
+                <form id="myForm">
+                    <label for="letter" class="letter_lab">Guess a letter:</label>
+                    <input type="text" id="letter" class="letter" onkeypress="handleKeyPress(event)" placeholder="Enter a letter" />
+                    <br><br>
+                    <center>
+                        <input type="button" class="enter" id="myBtn" value="ENTER" onclick="lettershow();">
+                    </center>
+                    <p id="caps"> Turn on Caps Lock</p>
+                </form>
             </div> 
                       
         </section>
         
     </div>
     <script src="mediumlevel.js"></script>
+    <script>
+        function myFunction() {
+            // Get the value of the input field with id="num"
+            let x = document.getElementById("num").value;
+            // If x is Not a Number or less than one or greater than 50
+            let text;
+            if (isNaN(x) || x < 1 || x > 50) {
+                text = "Input not valid";
+            } else {
+                text = "";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+
+        var input = document.getElementById("letter");
+        var text = document.getElementById("caps");
+        input.addEventListener("keyup", function(event) {
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "none";
+            } else {
+                text.style.display = "block";
+            }
+        });
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault(); // Prevent form submission
+               
+		    document.getElementById("myBtn").click();
+            }
+   var input = document.getElementById("num");
+   input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+         event.preventDefault();
+         document.getElementById("n").click();
+  }
+});        
+
+}
+		
+    </script>
 </body>
 </html>
