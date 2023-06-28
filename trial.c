@@ -1,4 +1,4 @@
-/*This is the c programming code of the gaming section*/
+/*This is the c programming code of the gaming section. Before converting to javascript, this was the basic code derived*/
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
